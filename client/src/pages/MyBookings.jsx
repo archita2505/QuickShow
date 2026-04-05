@@ -5,6 +5,7 @@ import BlurCircle from '../components/BlurCircle'
 import timeFormat from '../lib/timeFormat'
 import { dateFormat } from '../lib/dateFormat'
 import { useAppContext } from '../context/AppContext'
+import { Link } from 'react-router-dom'
 
 const MyBookings = () => {
 
@@ -52,14 +53,14 @@ const MyBookings = () => {
                 <p className='text-[40px] font-semibold'>{item.show.movie.title}</p>
                 <p className='text-gray-400 text-[20px]'>{timeFormat(item.show.movie.runtime)}</p>
                 <p className='text-gray-400 text-[20px] mt-auto'>{dateFormat(item.show.showDateTime)}</p>
-            </div>
+            </div> 
           </div>
 
           <div className='flex flex-col justify-center items-end text-right min-w-180px'>
             <div className='flex items-center gap-4 mb-3'>
               <p className='text-2xl font-semibold mr-3'>{currency}{item.amount}</p>
-              {!item.isPaid && <button className='bg-primary px-5 py-2 mr-3  text-[20px] rounded-full font-medium cursor-pointer'>Pay Now</button>}
-            </div>
+              {!item.isPaid && <Link to={item.paymentLink} className='bg-primary px-8 py-5 mb-3 text-xl rounded-full font-medium cursor-pointer'>Pay Now</Link>}
+            </div> 
             <div className='text-20 space-y-1 mr-3'>
               <p><span className='text-gray-400 mr-2'>Total Tickets : </span>{item.bookedSeats.length}</p>
               <p><span className='text-gray-400 mr-2'>Seat Number : </span>{item.bookedSeats.join(", ")}</p>
