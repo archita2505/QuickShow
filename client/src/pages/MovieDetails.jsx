@@ -43,6 +43,8 @@ const MovieDetails = () => {
     }
   }
 
+  const isFavourite = favouriteMovies.some(movie => String(movie._id) === String(id))
+
   useEffect(()=>{
     getShow()
   },[id])
@@ -70,7 +72,7 @@ const MovieDetails = () => {
             Watch Trailer</button>
           <a href="#dateSelect" className='px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer active:scale-95'>Buy Tickets</a>
           <button onClick={handleFavourite} className='bg-gray-700 p-2.5 rounded-full transition cursor-pointer active:scale-95'>
-            <Heart className={`w-5 h-5 ${favouriteMovies.find(movie => movie._id === id) ? 'fill-primary text-primary' : ""} `} />
+            <Heart className={`w-5 h-5 ${isFavourite ? 'fill-primary text-primary' : ""} `} />
           </button>
         </div>
       </div>
@@ -91,7 +93,7 @@ const MovieDetails = () => {
       <DateSelect dateTime={show.dateTime} id={id}/>
 
       <p className='text-lg font-medium mt-20 mb-8'>You May Also Like</p>
-      <div className='flex flex-wrap max-sm:justify-center gap-6'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
         {shows.slice(0,6).map((movie,index)=>(
           <MovieCard key={index} movie={movie}/>
         ))}

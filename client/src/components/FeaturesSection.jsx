@@ -22,7 +22,7 @@ const FeaturesSection = () => {
             <ArrowRight className="group-hover:translate-x-0.5 transition w-4.5 h-4.5" /></button>
       </div>
 
-      <div className='flex flex-wrap max-sm:justify-center gap-7 mt-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mt-8'>
         {shows.slice(0,6).map((show) => (
             <MovieCard key={show._id} movie={show} />
         ))}
