@@ -45,28 +45,24 @@ QuickShow is a full-stack movie discovery and ticket-booking web application. Us
 - Review booking records, including customer, movie, show time, seats, and amount.
 - Admin API endpoints check the signed-in user's Clerk private metadata role before returning protected management data.
 
-## Screenshots
 
-Add screenshots of the **real running application** to `docs/images/` and update the paths below. Avoid screenshots containing personal information, real customer details, payment information, or secret keys.
+## 📸 Screenshots
 
-| Page | Suggested file |
-|---|---|
-| Home page / hero section | `docs/images/homepage.png` |
-| Movie listings or search | `docs/images/movies.png` |
-| Movie details and show-date selection | `docs/images/movie-details.png` |
-| Seat selection and available timings | `docs/images/seat-selection.png` |
-| My Bookings | `docs/images/my-bookings.png` |
-| Admin dashboard | `docs/images/admin-dashboard.png` |
-| Add Shows | `docs/images/admin-add-shows.png` |
-| List Shows / List Bookings | `docs/images/admin-bookings.png` |
+### 🏠 Home Page
+![QuickShow Home Page](docs/images/homepage.png)
 
-Example Markdown once the screenshot files exist:
+### 🎬 Movie Details
+![QuickShow Movie Details](docs/images/movie-details.png)
 
-```md
-![QuickShow home page](docs/images/homepage.png)
-![QuickShow movie listings](docs/images/movies.png)
-![QuickShow admin dashboard](docs/images/admin-dashboard.png)
-```
+### 💺 Seat Selection
+![QuickShow Seat Selection](docs/images/seat-selection.png)
+
+### ⚙️ Admin Dashboard
+![QuickShow Admin Dashboard](docs/images/admin-dashboard.png)
+
+### 🎬 Admin Add Shows
+![QuickShow Admin Add Shows](docs/images/admin-add-shows.png)
+
 
 ## Technology stack
 
