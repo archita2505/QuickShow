@@ -61,7 +61,7 @@ QuickShow is a full-stack movie discovery and ticket-booking web application. Us
 ![QuickShow Admin Dashboard](docs/images/admin-dashboard.png)
 
 ### 🎬 Admin Add Shows
-![QuickShow Admin Add Shows](docs/images/admin-add-shows.png)
+![QuickShow Admin Add Shows](docs/images/admin-add-show.png)
 
 
 ## Technology stack
